@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to Bearcat studdy buddy application." });
 });
-require("../server/routes/bearcat.routes")(app);
+require("./routes/bearcat.routes")(app);
 //require("../server/routes/bearcat.routes")
 
 // set port, listen for requests
@@ -29,7 +29,7 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
 
-const db = require("../server/models");
+const db = require("./models");
 db.mongoose
   .connect(process.env.MONGODB_URI || db.url, {
     useNewUrlParser: true,
