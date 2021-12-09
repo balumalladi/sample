@@ -1,7 +1,7 @@
  (a) List of all pre-requisite software
-    Net beans IDE 8.0
-    java compiler with project byte code with version 12
-    MySQL version.
+          Net beans IDE 8.0
+           java compiler with project byte code with version 12
+           MySQL version.
  
   (b) Instructions for running the project
    1. Download the apache netbeans IDE 8 and later maven, my SQL version.
